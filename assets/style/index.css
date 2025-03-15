@@ -245,7 +245,7 @@ nav {
 .categorySection .categoryWrapper {
     height: 100% !important;
     width: 100%;
-    background-color: red;
+    background-color: #c0c0c0;
     border-radius: 12px;
 }
 
@@ -260,7 +260,7 @@ nav {
 .doubleCategory .categoryWrapper {
     width: 100% !important;
     height: 48% !important;
-    background-color: blue;
+    background-color: #c0c0c0;
 }
 
 .categoryWrapper {
@@ -487,6 +487,7 @@ footer {
     justify-content: space-between;
     align-items: start;
     text-align: right;
+    gap: 80px;
 }
 
 .aboutFooter {
@@ -561,7 +562,86 @@ footer {
     width: 100%;
     gap: 15px;
 }
-
+@media (max-width: 1300px) {
+    .heroInfo h1 {
+        font-size: 30px;
+    }
+    .heroInfo {
+        margin: 0;
+    }
+    .heroImg {
+        width: 40%;
+    }
+}
+@media (max-width: 1000px) {
+    .footerWrapper {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .heroInfo h1 {
+        font-size: 24px;
+    }
+    .heroInfo p {
+        font-size: 13px;
+        width: 400px;
+    }
+    .heroInfo .btnWrapper .btnItem {
+        font-size: 13px;
+    }
+    .clubSection .rightSection {
+        font-size: 13px;
+        width: 300px;
+    }
+    .rightSection h2 {
+        font-size: 23px;
+    }
+    .topFooter {
+        width: 100%;
+    }
+    .aboutFooter {
+        width: 100%;
+    }
+    .topFooter {
+        flex-wrap: wrap;
+    }
+    .authWrapper p {
+        display: none;
+    }
+}
+@media (max-width: 900px) {
+    .heroImg {
+        width: 70%;
+        margin-bottom: 20px;
+    }
+    .heroSection {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 700px) {
+    .container {
+        padding: 0 3%;
+    }
+    .clubSection {
+        flex-direction: column;
+    }
+    .clubImg {
+        width: 50%;
+    }
+    .searchContainer {
+        display: none;
+    }
+    .navItem {
+        display: none;
+    }
+    .searchWrapper {
+        display: flex;
+    }
+    .burgerMenu {
+        display: flex;
+    }
+}
 @media (max-width: 460px) {
     .searchContainer {
         display: none;
@@ -609,9 +689,9 @@ footer {
         font-size: 15px;
     }
     .heroInfo .btnWrapper .btnItem {
-        font-size: 13px;
-        padding: 15px 13px;
-        width: 50%;
+        font-size: 11px;
+        padding: 14px 12px;
+        width: 60%;
     }
     .heroInfo .btnWrapper {
         width: 100%;
@@ -652,6 +732,7 @@ footer {
     }
     .topFooter {
         gap: 10px;
+        flex-wrap: nowrap;
     }
     .footerWrapper {
         flex-direction: column;
@@ -664,7 +745,7 @@ footer {
     }
     .useLinks h4 {
         width: 105px;
-        font-size: 11px;
+        font-size: 10px;
     }
     .useLinks {
         font-size: 14px;
