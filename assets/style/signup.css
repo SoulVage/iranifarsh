@@ -27,6 +27,7 @@ body {
     align-items: center; /* وسط‌چین عمودی */
     justify-content: center; /* وسط‌چین افقی */
     height: 100vh;
+    flex-direction: column;
     width: 100%;
     margin: 0;
     font-family: "IranSans", sans-serif;
@@ -151,4 +152,316 @@ button {
 }
 .loginContainer p a {
     color: #CB1B1B;
+}
+header {
+  padding: 0;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  margin-top: 25px;
+  display: none;
+  padding: 50px;
+  z-index: 2000;
+  justify-content: space-between;
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.searchContainer {
+  width: 300px;
+  color: #717171;
+  font-size: 15px;
+  background-color: #EDEDED;
+  text-align: right;
+  padding: 0 15px;
+  border-radius: 9px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchContainer input {
+  all: unset;
+  height: 37px;
+  font-size: 12px;
+  width: 88%;
+}
+
+.searchContainer svg {
+  width: 19px;
+  height: 19px;
+}
+
+.searchWrapper {
+  width: 100%;
+  color: #717171;
+  font-size: 15px;
+  background-color: #EDEDED;
+  text-align: right;
+  padding: 0 15px;
+  border-radius: 9px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchWrapper input {
+  all: unset;
+  height: 37px;
+  font-size: 13px;
+  width: 88%;
+}
+
+.searchWrapper svg {
+  width: 19px;
+  height: 19px;
+}
+
+.burgerMenu {
+  width: 45px;
+  height: 45px;
+  border-radius: 10px;
+  background-color: #EDEDED;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.burgerMenu svg {
+  width: 25px;
+}
+
+.logoWrapper img {
+  width: 130px;
+  height: auto;
+}
+
+.optionContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.searchWrapper {
+  display: none;
+}
+
+.cartWrapper {
+  width: 45px;
+  height: 45px;
+  border: 1px solid #CB1B1B;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.authWrapper {
+  border: 1px solid #CB1B1B;
+  height: 45px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  color: #CB1B1B;
+  padding: 0 13px;
+  align-items: center;
+  gap: 30px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+nav {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 30px;
+  color: #121212;
+  border-bottom: 1px solid #b0afaf;
+  padding-bottom: 20px;
+}
+
+.navItem {
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.navItem.active {
+  color: #CB1B1B;
+}
+
+@media (max-width: 950px) {
+  .container {
+    position: relative;
+    width: 100%;
+    min-width: 0;
+    flex-direction: column;
+    height: 100vh;
+    z-index: 1000;
+  }
+  .imgContainer::after {
+    border-radius: 0;
+  }
+  .imgContainer {
+    position: relative;
+    width: 100%;
+    border-radius: 0;
+    height: 50vh;
+    z-index: 1;
+  }
+  .imgMain {
+    width: 100%;
+    border-radius: 0;
+    height: 50vh;
+  }
+  .logo {
+    display: none;
+  }
+  .loginContainer {
+    margin-top: -50px;
+    position: relative;
+    width: 100%;
+    background-color: white;
+    padding: 0 25px;
+    border-radius: 12px 12px 0 0;
+    z-index: 1000;
+  }
+}
+@media (max-width: 460px) {
+  .searchContainer {
+      display: none;
+  }
+  .authWrapper p {
+      display: none;
+  }
+  .searchWrapper {
+      display: flex;
+  }
+  .navItem {
+      display: none;
+  }
+
+  ::-webkit-scrollbar {
+      width: 0px;
+      height: 0px;
+  }
+  nav {
+      margin-top: 0;
+  }
+  .aboutFooter p {
+      line-height: 1.6;
+  }
+  .heroSection {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+  }
+  .heroInfo {
+      margin: 30px 0 0;
+  }
+  .heroImg {
+      width: 90%;
+  }
+  .heroInfo h1 {
+      font-size: 23px;
+  }
+  .heroInfo p {
+      width: 100%;
+      font-size: 15px;
+  }
+  .heroInfo .btnWrapper .btnItem {
+      font-size: 11px;
+      padding: 14px 12px;
+      width: 60%;
+  }
+  .heroInfo .btnWrapper {
+      width: 100%;
+      gap: 10px;
+  }
+  header {
+    display: flex;
+    width: 100%;
+    padding: 20px 20px;
+      margin-top: 0px;
+  }
+  .barPrimary a {
+      visibility: hidden;
+      font-size: 0px;
+  }
+  .productImg {
+      width: 90%;
+  }
+  .clubSection {
+      width: 100%;
+      flex-direction: column;
+  }
+  .clubImg {
+      margin-bottom: 10px;
+      width: 90%;
+  }
+  .clubSection .rightSection {
+      width: 100%;
+  }
+  .rightSection h2 {
+      font-size: 27px;
+  }
+  footer {
+      padding: 30px 10%;
+  }
+  .productBtn {
+      padding: 12px 0;
+  }
+  .clubSection .rightSection p {
+      line-height: 1.5;
+  }
+  .authWrapper a {
+    display: none;
+  }
+  .topFooter {
+      gap: 10px;
+      flex-wrap: nowrap;
+  }
+  .footerWrapper {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+  .logoWrapper {
+      gap: 15px;
+  }
+  .useLinks h4 {
+      width: 105px;
+      font-size: 10px;
+  }
+  .useLinks {
+      font-size: 14px;
+  }
+  .footerLogo {
+      width: 100px;
+  }
+  .aboutFooter {
+      margin-top: 30px;
+      gap: 10px;
+      width: 100%;
+      text-align: right;
+      font-size: 14px;
+  }
+  .infoFooter {
+      margin-top: 30px;
+      width: 100%;
+      justify-content: space-between;
+  }
+  .burgerMenu {
+      display: flex;
+  }
 }
